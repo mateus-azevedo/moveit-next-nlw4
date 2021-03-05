@@ -16,3 +16,27 @@
   gap: 6.25rem;
   align-content: center;
 }
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1024px) {
+  .container {
+    padding: 3rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    padding: 1.5rem 2.8rem;
+  }
+  
+  .container section {
+    display: block;
+  }
+  
+  .container section > div:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
