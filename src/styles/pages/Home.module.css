@@ -16,3 +16,35 @@
   gap: 6.25rem;
   align-content: center;
 }
+
+.section > div {
+  margin-top: 4rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 50rem;    
+  }
+
+  .container section {
+    /* display: flex; */
+    gap: 1rem;
+    align-content: flex-start;
+    grid-template-columns: auto;
+  }
+
+  .section > div {
+    margin-top: 0;
+  }
+  
+  .section > div:nth-child(1) {
+    margin-top: 2.5rem;
+  }
+
+  .changePosition {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
